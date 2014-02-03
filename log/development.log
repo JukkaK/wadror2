@@ -22368,3 +22368,21 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-03 11:52:18 +0200
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 11:52:18 +0200
+  [1m[36m (13.4ms)[0m  [1mCREATE TABLE "beer_clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "founded" integer, "city" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (17.0ms)[0m  CREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "style" varchar(255), "brewery_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (14.4ms)[0m  [1mCREATE TABLE "breweries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "year" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (15.5ms)[0m  CREATE TABLE "memberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "beer_club_id" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (14.5ms)[0m  [1mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "beer_id" integer, "created_at" datetime, "updated_at" datetime, "user_id" integer) [0m
+  [1m[35m (13.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255)) 
+  [1m[36m (16.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (20.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (3.9ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (17.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140123153917')
+  [1m[36m (17.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140106173907')[0m
+  [1m[35m (29.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140106205224')
+  [1m[36m (16.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140115222717')[0m
+  [1m[35m (15.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140121192627')
+  [1m[36m (16.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140121232716')[0m
+  [1m[35m (16.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140122235314')
+  [1m[36m (16.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140122235710')[0m
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers" ORDER BY "beers"."id" ASC LIMIT 1[0m

@@ -1,0 +1,370 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (32.4ms)[0m  [1mINSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 12:37:44 UTC +00:00], ["password_digest", "$2a$04$NiqHbQsrRGpGtWWiLkJJ4.AzYjYYqU6k9X2X.IxFJwKu5.iYNGgUy"], ["updated_at", Mon, 03 Feb 2014 12:37:44 UTC +00:00], ["username", "Pekka"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (9.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.7ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (18.6ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 12:50:39 UTC +00:00], ["password_digest", "$2a$04$5a6ddui70opm3XlcJkuir.Rov6.EO6JCVavbaDT3Ee0RsIaYLsYBi"], ["updated_at", Mon, 03 Feb 2014 12:50:39 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 12:50:39 UTC +00:00], ["score", 10], ["updated_at", Mon, 03 Feb 2014 12:50:39 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 12:50:39 UTC +00:00], ["score", 20], ["updated_at", Mon, 03 Feb 2014 12:50:39 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (12.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (2.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 12:50:39 UTC +00:00], ["password_digest", "$2a$04$IrpSpOEmeR9aoRdnEbNBie6yauyPVf/fk5dZsO06Ujjb1zUoC29Ny"], ["updated_at", Mon, 03 Feb 2014 12:50:39 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (10.8ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 12:51:26 UTC +00:00], ["password_digest", "$2a$04$rj2Bq4vFxCN50vHpKtEOee9F6bMGNvCZbThJyXRkO9T5M1epOyBLW"], ["updated_at", Mon, 03 Feb 2014 12:51:26 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (8.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 12:51:26 UTC +00:00], ["password_digest", "$2a$04$Q1/99S9UzaB5RD.hqffuGuZtcGub4OpIqDYgnm8nIHfTjLLgxRNN6"], ["updated_at", Mon, 03 Feb 2014 12:51:26 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 12:51:26 UTC +00:00], ["score", 10], ["updated_at", Mon, 03 Feb 2014 12:51:26 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 12:51:26 UTC +00:00], ["score", 20], ["updated_at", Mon, 03 Feb 2014 12:51:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (9.7ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (27.6ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["password_digest", "$2a$04$ckEg9YvFfCgElffNORpjyOdRMRXa.FG9HbcmFJ62KIxIgQLG5vUj6"], ["updated_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (10.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (2.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["password_digest", "$2a$04$/LqjhYc.drtmkDKeRmGA.uQwg1dUbto4y7/aRAFM8ZPT/XFkEC3fq"], ["updated_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (9.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["password_digest", "$2a$04$C7mYoQ83QOW9P4hktBUNGehG.QqKisZgFtkQZhe4ntmM0nrQ08URq"], ["updated_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["score", 10], ["updated_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["score", 20], ["updated_at", Mon, 03 Feb 2014 13:02:59 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (9.7ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Jaska' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (41.6ms)[0m  [1mINSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["password_digest", "$2a$04$2Xq7VI1uyJcvwDHLIfM.4u8kvxzYIFREPR7/g3VCovmMWOOWfFjJe"], ["updated_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["username", "Jaska"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Jaska' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (11.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (3.7ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Tero' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Tero' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["password_digest", "$2a$04$8Mx4lw3T91Zaxh1YzrWnquO8zfMc1VOmcb5Rnf.F1iQEGcW4YH5Vy"], ["updated_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["score", 10], ["updated_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["score", 20], ["updated_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (11.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["password_digest", "$2a$04$Dng9GJyuFJt5tulLccCLZulXcLdVar2BA7Lm7A2hbvTjgHQPxjIwa"], ["updated_at", Mon, 03 Feb 2014 13:04:41 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (10.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Tero' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Tero' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Jaska' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Jaska' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (17.1ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:05:50 UTC +00:00], ["password_digest", "$2a$04$R3SAGIahH62q0ETactDz7.rQS3hwt75h/AnyOmVXTi/L9TQQnFuTC"], ["updated_at", Mon, 03 Feb 2014 13:05:50 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (10.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:05:50 UTC +00:00], ["password_digest", "$2a$04$ybGU0DyZF5WVVcLdzDGU2urY5jTANqL069S7kcxkw4CWWZxu88NY6"], ["updated_at", Mon, 03 Feb 2014 13:05:50 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:05:50 UTC +00:00], ["score", 10], ["updated_at", Mon, 03 Feb 2014 13:05:50 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:05:50 UTC +00:00], ["score", 20], ["updated_at", Mon, 03 Feb 2014 13:05:50 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (11.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (17.4ms)[0m  [1mINSERT INTO "beers" ("created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:13:22 UTC +00:00], ["name", "Testikalja"], ["style", "Testimaku"], ["updated_at", Mon, 03 Feb 2014 13:13:22 UTC +00:00]]
+  [1m[35m (26.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (14.2ms)[0m  [1mINSERT INTO "beers" ("created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:15:34 UTC +00:00], ["name", "Testikalja"], ["style", "Testimaku"], ["updated_at", Mon, 03 Feb 2014 13:15:34 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (29.5ms)[0m  [1mINSERT INTO "beers" ("created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:18:59 UTC +00:00], ["name", "Testikalja"], ["style", "Testimaku"], ["updated_at", Mon, 03 Feb 2014 13:18:59 UTC +00:00]]
+  [1m[35m (16.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (19.2ms)[0m  [1mINSERT INTO "beers" ("created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:20:55 UTC +00:00], ["name", "Testikalja"], ["style", "Testimaku"], ["updated_at", Mon, 03 Feb 2014 13:20:55 UTC +00:00]]
+  [1m[35m (16.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (39.4ms)[0m  INSERT INTO "beers" ("created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:22:32 UTC +00:00], ["name", "Testikalja"], ["style", "Testimaku"], ["updated_at", Mon, 03 Feb 2014 13:22:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (9.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Tero' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Tero' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Jaska' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Jaska' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (24.1ms)[0m  [1mINSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:22:33 UTC +00:00], ["password_digest", "$2a$04$JtlpS.U0vC2kV5w71EaM2.tLd4qNLekEpLkPB3pKNvBFVB7R6H9IS"], ["updated_at", Mon, 03 Feb 2014 13:22:33 UTC +00:00], ["username", "Pekka"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (21.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (10.4ms)[0m  [1mINSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:22:33 UTC +00:00], ["password_digest", "$2a$04$QF25LGu85fQDysYf6rZ6P.YUjJOC06J67PJUtqqJuUw1Uj6wQiE4a"], ["updated_at", Mon, 03 Feb 2014 13:22:33 UTC +00:00], ["username", "Pekka"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:22:33 UTC +00:00], ["score", 10], ["updated_at", Mon, 03 Feb 2014 13:22:33 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:22:33 UTC +00:00], ["score", 20], ["updated_at", Mon, 03 Feb 2014 13:22:33 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (11.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Tero' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Tero' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Jaska' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'Jaska' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (21.5ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["password_digest", "$2a$04$qkHnswxadr/kQbxpAmwLGunqdF9B8f5jEand8pSgEbtwZpuawSlju"], ["updated_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["score", 10], ["updated_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ratings" ("created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["score", 20], ["updated_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (11.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (3.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["password_digest", "$2a$04$k/Q8xZw3rWU0SRugJ0xMXufviHBMQzKU1p9ytwNf5CSz8RiLtNTfC"], ["updated_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["username", "Pekka"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (12.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "beers" ("created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00], ["name", "Testikalja"], ["style", "Testimaku"], ["updated_at", Mon, 03 Feb 2014 13:25:07 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (10.8ms)[0m  [1mrollback transaction[0m
