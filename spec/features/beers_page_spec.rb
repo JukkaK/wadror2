@@ -3,7 +3,7 @@ require 'spec_helper'
 include OwnTestHelper
 
 describe "Beers page" do
-  let(:user){ FactoryGirl.create(:user) }
+  let!(:user){ FactoryGirl.create(:user) }
   let!(:brewery) { FactoryGirl.create :brewery, name:"Koff" }
   let!(:beer1) { FactoryGirl.create :beer, name:"iso 3", brewery:brewery }
 
@@ -17,7 +17,9 @@ describe "Beers page" do
   end
 
   it "should be able to add beer with valid name" do
+    #sign_in(username:"Pekka", password:"Foobar1")
     visit new_beer_path
+    #puts page.html
     fill_in('beer[name]', with:'Yksikkotestikalja')
     page.select('Lager', :from => 'beer[style]')
     page.select('Koff', :from => 'beer[brewery_id]')

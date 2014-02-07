@@ -342,9 +342,12 @@
         null,
         1,
         9,
+        null,
         9,
         9,
+        null,
         9,
+        null,
         null,
         null
       ],
@@ -675,6 +678,7 @@
       "/home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/controllers/beer_clubs_controller.rb": [
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -757,12 +761,16 @@
         1,
         null,
         1,
-        78,
-        53,
+        106,
+        89,
+        null,
+        1,
+        7,
         null,
         null
       ],
       "/home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/controllers/memberships_controller.rb": [
+        1,
         1,
         1,
         null,
@@ -851,10 +859,10 @@
         9,
         null,
         9,
-        4,
+        1,
         null,
-        5,
-        5,
+        8,
+        8,
         null,
         null,
         null,
@@ -934,7 +942,7 @@
         1,
         null,
         1,
-        10,
+        13,
         null,
         null,
         null,
@@ -953,6 +961,8 @@
       ],
       "/home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/controllers/ratings_controller.rb": [
         1,
+        1,
+        null,
         1,
         1,
         null,
@@ -1056,17 +1066,10 @@
         1,
         0,
         null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
         null
       ],
       "/home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/controllers/beers_controller.rb": [
+        1,
         1,
         1,
         null,
@@ -1152,6 +1155,6 @@
         null
       ]
     },
-    "timestamp": 1391780373
+    "timestamp": 1391783847
   }
 }

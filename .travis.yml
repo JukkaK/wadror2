@@ -1,10 +1,15 @@
 language: ruby
-
 rvm:
- - 2.0.0
-
+- 2.0.0
 script:
- - bundle exec rake db:migrate --trace
- - RAILS_ENV=test bundle exec rake db:migrate --trace
- - bundle exec rake db:test:prepare
- - bundle exec rspec -fd spec/
+- bundle exec rake db:migrate --trace
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec -fd spec/
+deploy:
+  provider: heroku
+  api_key:
+    secure: JgiRO36cB4b3cK0SJL4uIa4zaCOGBuNVIzEZqq2TjYSh8UVK6ifvYD4sMUa2bM0rXK8flpdwHayQyeyQkjy6YyU1H6zk9P8DWipZIyGdFf2FHIhFaWdQcTPBNzeHuKVXI65zIzKiaL4zwwOPKkaN1Us3XD4IalUaq8NhlouhnBw=
+  app: murmuring-reaches-1496
+  on:
+    repo: JukkaK/wadror2
