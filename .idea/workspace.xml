@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="beers_page_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="beers_page_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/beers_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="40" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.5464481" vertical-offset="0" max-vertical-offset="1098">
+            <state line="40" column="40" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ratings_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ratings_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="3" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+            <state line="17" column="5" selection-start="617" selection-end="617" vertical-scroll-proportion="0.23224044" vertical-offset="0" max-vertical-offset="1098">
               <folding />
             </state>
           </provider>
@@ -129,8 +129,8 @@
         <option value="$PROJECT_DIR$/spec/features/users_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/beers/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/beers_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/features/ratings_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/beers_page_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/ratings_spec.rb" />
       </list>
     </option>
   </component>
@@ -756,16 +756,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/features/beers_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="3" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+        <state line="40" column="40" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/beers_page_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="40" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.5464481" vertical-offset="0" max-vertical-offset="1098">
+        <state line="17" column="5" selection-start="617" selection-end="617" vertical-scroll-proportion="0.23224044" vertical-offset="0" max-vertical-offset="1098">
           <folding />
         </state>
       </provider>
