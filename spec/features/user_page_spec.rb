@@ -20,5 +20,15 @@ describe "User page" do
     expect(page).to have_content 'has made 1 rating'
   end
 
+  it "should be able to delete rating" do
+    expect(user.ratings.count).to equal(1)
+    visit user_path(user)
+    click_on("delete")
+    #page.driver.browser.switch_to.alert.accept
+    expect(user.ratings.count).to equal(0)
+    expect(page).to have_content 'has not yet made ratings'
+  end
+
+
 
 end

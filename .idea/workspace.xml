@@ -44,34 +44,7 @@
       <file leaf-file-name="user_page_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/features/user_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="468" selection-end="468" vertical-scroll-proportion="0.15027322" vertical-offset="0" max-vertical-offset="1098">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ratings_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="66" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="breweries_page_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/breweries_page_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="284" selection-end="500" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="660">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/beers/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="63" selection-start="368" selection-end="368" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="540">
+            <state line="27" column="41" selection-start="976" selection-end="976" vertical-scroll-proportion="0.36885247" vertical-offset="0" max-vertical-offset="1098">
               <folding />
             </state>
           </provider>
@@ -645,13 +618,6 @@
         <state line="8" column="3" selection-start="213" selection-end="213" vertical-scroll-proportion="0.12269939" vertical-offset="0" max-vertical-offset="978" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/breweries_page_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="284" selection-end="500" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/beers/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="63" selection-start="368" selection-end="368" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="540">
@@ -675,14 +641,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="66" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/beers_page_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="326" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+        <state line="9" column="0" selection-start="66" selection-end="400" vertical-scroll-proportion="0.12295082" vertical-offset="0" max-vertical-offset="1098">
           <folding />
         </state>
       </provider>
@@ -694,9 +653,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/breweries_page_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="284" selection-end="500" vertical-scroll-proportion="0.23224044" vertical-offset="0" max-vertical-offset="1098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/beers_page_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="326" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/user_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="468" selection-end="468" vertical-scroll-proportion="0.15027322" vertical-offset="0" max-vertical-offset="1098">
+        <state line="27" column="41" selection-start="976" selection-end="976" vertical-scroll-proportion="0.36885247" vertical-offset="0" max-vertical-offset="1098">
           <folding />
         </state>
       </provider>
