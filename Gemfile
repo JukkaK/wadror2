@@ -63,3 +63,5 @@ group :test do
   gem 'simplecov', require: false
   gem 'webmock'
 end
+
+gem "rails-settings-cached", "0.3.1"

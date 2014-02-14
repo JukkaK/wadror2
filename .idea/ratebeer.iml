@@ -193,6 +193,7 @@
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v2.2.1, rbenv: 2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.38, rbenv: 2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.4.0, rbenv: 2.0.0-p353) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webmock (v1.17.3, rbenv: 2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, rbenv: 2.0.0-p353) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

@@ -25177,3 +25177,2209 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-10 15:37:12 +0200
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-10 15:37:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSettings (20140214102938)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "settings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "var" varchar(255) NOT NULL, "value" text, "thing_id" integer, "thing_type" varchar(30), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_settings_on_thing_type_and_thing_id_and_var" ON "settings" ("thing_type", "thing_id", "var")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140214102938"]]
+  [1m[35m (44.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mSettings Load (0.3ms)[0m  [1mSELECT "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = 'beermapping_apikey' ORDER BY "settings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (78.0ms)[0m  [1mINSERT INTO "settings" ("created_at", "updated_at", "value", "var") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 14 Feb 2014 10:31:30 UTC +00:00], ["updated_at", Fri, 14 Feb 2014 10:31:30 UTC +00:00], ["value", "--- a65b1c789c5d04cbfea12abf4fa75396\n...\n"], ["var", "beermapping_apikey"]]
+  [1m[35m (17.2ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-14 12:40:41 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (16.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.2ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (49.2ms)
+Completed 200 OK in 2567ms (Views: 2424.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:45 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:45 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:45 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:45 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:45 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:40:45 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-14 12:40:47 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.erb within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:44:48 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (2.6ms)
+Completed 200 OK in 44707ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:45:33 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:53:33 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (9.5ms)
+Completed 200 OK in 127ms (Views: 94.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:53:34 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:54:33 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (8.4ms)
+Completed 200 OK in 100ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:33 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:33 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:33 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:33 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:33 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:33 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:34 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-14 12:54:38 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:38 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:38 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:38 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:39 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (7.6ms)
+Completed 200 OK in 25ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:42 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:43 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:43 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:43 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:43 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:54:43 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:55:16 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (2.5ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:55:17 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:56:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (149.7ms)
+Completed 500 Internal Server Error in 222ms
+
+ActionView::Template::Error (undefined method `each' for Place:Class):
+    22:     </table>
+    23:     <table>
+    24:       <thead>
+    25:       <% Place.each do |f| %>
+    26:           <td><%=f %></td>
+    27:       <% end %>
+    28:     </table>
+  app/views/places/index.erb:25:in `_app_views_places_index_erb__3935721746797416858_70268821775240'
+  app/controllers/places_controller.rb:10:in `search'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (626.3ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:56:56 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (47.0ms)
+Completed 500 Internal Server Error in 110ms
+
+ActionView::Template::Error (undefined method `f' for #<#<Class:0x007fd1844a0c10>:0x007fd174391e38>):
+    23:     <table>
+    24:       <thead>
+    25:       <% @places.each do |place| %>
+    26:           <td><%=f link_to place.name, place %></td>
+    27:       <% end %>
+    28:     </table>
+    29: 
+  app/views/places/index.erb:26:in `block in _app_views_places_index_erb__3935721746797416858_70268787394100'
+  app/views/places/index.erb:25:in `each'
+  app/views/places/index.erb:25:in `_app_views_places_index_erb__3935721746797416858_70268787394100'
+  app/controllers/places_controller.rb:10:in `search'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.1ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:57:10 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (3.2ms)
+Completed 200 OK in 88ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:10 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:10 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:10 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:10 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:10 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:11 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.erb within layouts/application (0.6ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:23 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:24 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:24 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:24 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:24 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:24 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:25 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:57:37 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (3.1ms)
+Completed 200 OK in 101ms (Views: 98.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:57:38 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:58:23 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (3.1ms)
+Completed 200 OK in 88ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 12:58:24 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:59:00 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"places"} missing required keys: [:id]):
+    23:     <table>
+    24:       <% @places.each do |place| %>
+    25:       <tr>
+    26:           <td><%= link_to place.name, place_path %></td>
+    27:       </tr>
+    28:       <% end %>
+    29: 
+  app/views/places/index.erb:26:in `block in _app_views_places_index_erb__3935721746797416858_70268819398060'
+  app/views/places/index.erb:24:in `each'
+  app/views/places/index.erb:24:in `_app_views_places_index_erb__3935721746797416858_70268819398060'
+  app/controllers/places_controller.rb:10:in `search'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.9ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 12:59:34 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"places"} missing required keys: [:id]):
+    23:     <table>
+    24:       <% @places.each do |place| %>
+    25:       <tr>
+    26:           <td><%= link_to place.name, place_url %></td>
+    27:       </tr>
+    28:       <% end %>
+    29: 
+  app/views/places/index.erb:26:in `block in _app_views_places_index_erb__3935721746797416858_70268886485440'
+  app/views/places/index.erb:24:in `each'
+  app/views/places/index.erb:24:in `_app_views_places_index_erb__3935721746797416858_70268886485440'
+  app/controllers/places_controller.rb:10:in `search'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.4ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (3.2ms)
+Completed 200 OK in 86ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:00:07 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:05:40 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (No route matches {:id=>#<Place:0x007fd18444f798 @id="6742", @name="Pullman Bar", @status="Beer Bar", @reviewlink="http://beermapping.com/maps/reviews/reviews.php?locid=6742", @proxylink="http://beermapping.com/maps/proxymaps.php?locid=6742&d=5", @blogmap="http://beermapping.com/maps/blogproxy.php?locid=6742&d=1&type=norm", @street="Kaivokatu 1", @city="Helsinki", @state=nil, @zip="00100", @country="Finland", @phone="+358 9 0307 22", @overall="72.500025", @imagecount="0">} missing required keys: [:id]):
+    23:     <table>
+    24:       <% @places.each do |place| %>
+    25:       <tr>
+    26:           <td><%= link_to place.name, place_path(place) %></td>
+    27:       </tr>
+    28:       <% end %>
+    29: 
+  app/views/places/index.erb:26:in `block in _app_views_places_index_erb__3935721746797416858_70268922063180'
+  app/views/places/index.erb:24:in `each'
+  app/views/places/index.erb:24:in `_app_views_places_index_erb__3935721746797416858_70268922063180'
+  app/controllers/places_controller.rb:10:in `search'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.6ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (3.4ms)
+Completed 200 OK in 84ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:55 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:56 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:56 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:56 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:56 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:05:56 +0200
+
+
+Started GET "/places/70268923010400" for 127.0.0.1 at 2014-02-14 13:06:00 +0200
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PlacesController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1474616394866602461__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:06:03 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:12:54 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (2.2ms)
+Completed 200 OK in 84ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:12:55 +0200
+
+
+Started GET "/places/70269057353320" for 127.0.0.1 at 2014-02-14 13:12:57 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70269057353320"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  lib/beermapping_api.rb:3:in `places_in'
+  app/controllers/places_controller.rb:14:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (315.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:23 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:24 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:21:25 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (2.2ms)
+Completed 200 OK in 66ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:21:26 +0200
+
+
+Started GET "/places/70269054113200" for 127.0.0.1 at 2014-02-14 13:21:29 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70269054113200"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `downcase' for #<ActionDispatch::Request::Session:0x007fd1845a2000>):
+  lib/beermapping_api.rb:3:in `places_in'
+  app/controllers/places_controller.rb:19:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:21:59 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:00 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:22:01 +0200
+
+
+Started GET "/places/70269056205640" for 127.0.0.1 at 2014-02-14 13:22:03 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70269056205640"}
+Completed 500 Internal Server Error in 55222ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/places_controller.rb:20:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:23:02 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:23:18 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (16.9ms)
+Completed 200 OK in 50697ms (Views: 486.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:10 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:11 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:11 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:11 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:24:11 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:24:49 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (13.2ms)
+Completed 200 OK in 50113ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:40 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:25:41 +0200
+
+
+Started GET "/places/70269056968980" for 127.0.0.1 at 2014-02-14 13:25:43 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70269056968980"}
+Completed 500 Internal Server Error in 67399ms
+
+NoMethodError (undefined method `find_by' for #<Array:0x007fd190bb5148>):
+  app/controllers/places_controller.rb:22:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:27:14 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:27:15 +0200
+
+
+Started GET "/places/70269056968980" for 127.0.0.1 at 2014-02-14 13:27:17 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70269056968980"}
+Completed 500 Internal Server Error in 14988ms
+
+NoMethodError (undefined method `find_by' for #<Array:0x007fd1926d8c68>):
+  app/controllers/places_controller.rb:21:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.4ms)
+
+
+Started GET "/places/70269056968980" for 127.0.0.1 at 2014-02-14 13:27:32 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70269056968980"}
+Completed 500 Internal Server Error in 4453ms
+
+NoMethodError (undefined method `find_by' for #<Array:0x007fd193fb3080>):
+  app/controllers/places_controller.rb:21:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:46 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:48 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:28:49 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (13.5ms)
+Completed 200 OK in 103ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:28:50 +0200
+
+
+Started GET "/places/70268921368760" for 127.0.0.1 at 2014-02-14 13:28:53 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70268921368760"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fd1843231d0%3E
+Completed 302 Found in 50785ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fd1843231d0%3E" for 127.0.0.1 at 2014-02-14 13:29:44 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fd1843231d0>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fd1844d3430%3E
+Completed 302 Found in 2555ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fd1844d3430%3E" for 127.0.0.1 at 2014-02-14 13:29:46 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fd1844d3430>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fd18460e638%3E
+Completed 302 Found in 5136ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fd18460e638%3E" for 127.0.0.1 at 2014-02-14 13:29:51 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fd18460e638>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fd170055d90%3E
+Completed 302 Found in 4795ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fd170055d90%3E" for 127.0.0.1 at 2014-02-14 13:29:56 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fd170055d90>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fd17845ce90%3E
+Completed 302 Found in 4688ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fd17845ce90%3E" for 127.0.0.1 at 2014-02-14 13:30:01 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fd17845ce90>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fd1784ff7f8%3E
+Completed 302 Found in 8646ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fd1784ff7f8%3E" for 127.0.0.1 at 2014-02-14 13:30:10 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fd1784ff7f8>"}
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-14 13:31:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.2ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 725ms (Views: 593.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:13 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:13 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:13 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:13 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:13 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:13 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:14 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:14 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:14 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:14 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:14 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:14 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-14 13:31:16 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:21 +0200
+
+
+Started GET "/places/70322071543540" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70322071543540"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea543315f8%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea543315f8%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea543315f8>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea543793d0%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea543793d0%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea543793d0>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea543d1440%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea543d1440%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea543d1440>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea54415ff0%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea54415ff0%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea54415ff0>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea54472750%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea54472750%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea54472750>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea544ce208%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea544ce208%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea544ce208>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea5452a5d0%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea5452a5d0%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea5452a5d0>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea5458aa70%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea5458aa70%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea5458aa70>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea4c00acb0%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea4c00acb0%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea4c00acb0>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea4410f438%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea4410f438%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea4410f438>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea441539a8%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea441539a8%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea441539a8>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea441a3520%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea441a3520%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea441a3520>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea4421e9a0%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea4421e9a0%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea4421e9a0>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea44277c58%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea44277c58%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea44277c58>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea442dc310%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea442dc310%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea442dc310>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea4434f630%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea4434f630%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea4434f630>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea443afa08%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea443afa08%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea443afa08>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea4c132570%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea4c132570%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea4c132570>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea4c17f6e0%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea4c17f6e0%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea4c17f6e0>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea48194918%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/%23%3CEnumerator:0x007fea48194918%3E" for 127.0.0.1 at 2014-02-14 13:31:23 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"#<Enumerator:0x007fea48194918>"}
+Redirected to http://localhost:8022/places/%23%3CEnumerator:0x007fea544e5a98%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:27 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:27 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:27 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:27 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:27 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:27 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:31:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:28 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:28 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:28 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:28 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:28 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:31:28 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-14 13:34:13 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wk7+tRggIKBa3c++2gXKmza5UyGSJlDNtJ4pVRy3UBE=", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.erb within layouts/application (2.3ms)
+Completed 200 OK in 104ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:14 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:15 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:15 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:15 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:15 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:15 +0200
+
+
+Started GET "/places/70322352945100" for 127.0.0.1 at 2014-02-14 13:34:16 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70322352945100"}
+  Rendered places/show.erb within layouts/application (19.5ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (undefined method `name' for #<Enumerator:0x007fea54435df0>):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h2>
+    4:   <%= @place.name %>
+    5: </h2>
+    6: 
+    7: <p>
+  app/views/places/show.erb:4:in `_app_views_places_show_erb__1367803229645591081_70322206388840'
+  app/controllers/places_controller.rb:22:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-14 13:34:53 +0200
+
+
+Started GET "/places/70322352978820" for 127.0.0.1 at 2014-02-14 13:34:54 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70322352978820"}
+  Rendered places/show.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 51542ms
+
+ActionView::Template::Error (undefined method `name' for #<Enumerator:0x007fea65d4cf40>):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h2>
+    4:   <%= @place.name %>
+    5: </h2>
+    6: 
+    7: <p>
+  app/views/places/show.erb:4:in `_app_views_places_show_erb__1367803229645591081_70322354822160'
+  app/controllers/places_controller.rb:23:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.6ms)
+
+
+Started GET "/places/70322352978820" for 127.0.0.1 at 2014-02-14 13:35:46 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"70322352978820"}
+  Rendered places/show.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 2890ms
+
+ActionView::Template::Error (undefined method `name' for #<Enumerator:0x007fea44188590>):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h2>
+    4:   <%= @place.name %>
+    5: </h2>
+    6: 
+    7: <p>
+  app/views/places/show.erb:4:in `_app_views_places_show_erb__1367803229645591081_70322206388840'
+  app/controllers/places_controller.rb:23:in `show'
+
+
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.3ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+  Rendered /home/koskelin/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.8ms)

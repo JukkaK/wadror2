@@ -414,6 +414,13 @@
       "/home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/lib/beermapping_api.rb": [
         1,
         1,
+        5,
+        8,
+        null,
+        null,
+        1,
+        null,
+        1,
         3,
         null,
         3,
@@ -432,6 +439,10 @@
         null,
         null
       ],
+      "/home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/models/settings.rb": [
+        1,
+        null
+      ],
       "/home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/models/place.rb": [
         1,
         1,
@@ -444,6 +455,6 @@
         null
       ]
     },
-    "timestamp": 1392367286
+    "timestamp": 1392374190
   }
 }

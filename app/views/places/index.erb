@@ -20,4 +20,13 @@
           </tr>
       <% end %>
     </table>
+    <table>
+      <% @places.each do |place| %>
+      <tr>
+          <td><%= link_to place.name, place_path(place.__id__) %></td>
+      </tr>
+      <% end %>
+
+    </table>
+
 <% end %>
