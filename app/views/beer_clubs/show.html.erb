@@ -14,4 +14,9 @@
   <% end %>
 </ul>
 
+<%= form_for(@membership) do |f| %>
+    <%= f.hidden_field :beer_club_id %>
+    <%= f.submit value:"join the club" %>
+<% end %>
+
 <%= link_to 'Edit', edit_beer_club_path(@beer_club) %>

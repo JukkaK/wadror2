@@ -23,7 +23,7 @@
     <table>
       <% @places.each do |place| %>
       <tr>
-          <td><%= link_to place.name, place_path(place.__id__) %></td>
+          <td><%= link_to place.name, place_url(place.id) %></td>
       </tr>
       <% end %>
 

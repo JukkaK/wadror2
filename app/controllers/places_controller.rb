@@ -18,8 +18,8 @@ class PlacesController < ApplicationController
     else
       @places = BeermappingApi.places_in(session[:last_city])
       #byebug
-      @place = @places.find(__id__)
-      #byebug
+      @place = @places.find(params[:id])
+      byebug
       render :show
     end
   end
