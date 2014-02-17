@@ -16,7 +16,7 @@
 
 <ul>
   <% @breweries.top(3).each do |brewery| %>
-      <li> <%= brewery.name %>, <%= brewery.average_rating %> </li>
+      <li> <%= brewery.name %>, <%= round(brewery.average_rating) %> </li>
   <% end %>
 </ul>
 
@@ -24,7 +24,7 @@
 
 <ul>
   <% @users.top(3).each do |user| %>
-      <li> <%= user.username %>, <%= user.favorite_beer %>, <%= user.favorite_style %>, <%= user.favorite_brewery.name %>, <%= user.ratings.count %> </li>
+      <li> <%= user.username %>, <%= user.favorite_beer %>, <%= user.favorite_style %>, <%= user.favorite_brewery.name %>, <%= round(user.ratings.count) %> </li>
   <% end %>
 </ul>
 
