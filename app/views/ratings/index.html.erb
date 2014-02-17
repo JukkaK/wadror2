@@ -2,9 +2,29 @@
 
 <p>Number of ratings <%= @ratings.count %></p>
 
+<%= render 'list', ratings: @ratings %>
+
+<p>Recent ratings</p>
+
 <ul>
-  <% @ratings.each do |rating| %>
+  <% @ratings.recent.each do |rating| %>
       <li> <%= rating %> <%= link_to rating.user.username, rating.user %> </li>
+  <% end %>
+</ul>
+
+<p>Top 3 breweries</p>
+
+<ul>
+  <% @breweries.top(3).each do |brewery| %>
+      <li> <%= brewery.name %>, <%= brewery.average_rating %> </li>
+  <% end %>
+</ul>
+
+<p>Top 3 users</p>
+
+<ul>
+  <% @users.top(3).each do |user| %>
+      <li> <%= user.username %>, <%= user.favorite_beer %>, <%= user.favorite_style %>, <%= user.favorite_brewery.name %>, <%= user.ratings.count %> </li>
   <% end %>
 </ul>
 

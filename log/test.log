@@ -38533,3 +38533,4 @@ Processing by SessionsController#new as HTML
   Rendered sessions/new.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
   [1m[36m (10.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
