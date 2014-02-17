@@ -1,25 +1,26 @@
 require 'spec_helper'
 
 describe Beer do
-  it "has name and style set" do
-  beer = Beer.create name:"Testikalja", style:"Testimaku"
+  it "is saved when name and style are nonempty" do
+    beer = Beer.create name:"Karhu", style:FactoryGirl.create(:style)
 
-  expect(beer).to be_valid
+    expect(beer).to be_valid
+    expect(Beer.count).to eq(1)
   end
 
-  it "does not have a name" do
-    beer = Beer.create style:"Testimaku"
+  describe "is not saved" do
+    it "if name missing" do
+      beer = Beer.create style:FactoryGirl.create(:style)
 
-    expect(beer).not_to be_valid
+      expect(beer).not_to be_valid
+      expect(Beer.count).to eq(0)
+    end
+
+    it "if style missing" do
+      beer = Beer.create name:"Karhu"
+
+      expect(beer).not_to be_valid
+      expect(Beer.count).to eq(0)
+    end
   end
-
-  it "does not have a style" do
-    beer = Beer.create name:"Testikalja"
-
-    expect(beer).not_to be_valid
-  end
-
-
-
-
 end

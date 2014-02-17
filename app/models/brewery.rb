@@ -4,6 +4,6 @@ class Brewery < ActiveRecord::Base
   validates :name, presence: true
   validates :year, numericality: { less_than_or_equal_to: ->(_) { Time.now.year} }
 
-	has_many :beers, :dependent => :destroy
+  has_many :beers, :dependent => :destroy
   has_many :ratings, :through => :beers
 end
