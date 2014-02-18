@@ -1,32 +1,60 @@
 <h2>List of ratings</h2>
 
-<p>Number of ratings <%= @ratings.count %></p>
 
-<%= render 'list', ratings: @ratings %>
+<div class="row">
+  <div class="col-md-6">
+    <p>Number of ratings <%= @ratings.count %></p>
 
-<p>Recent ratings</p>
+    <%= render 'list', ratings: @ratings %>
+  </div>
+  <div class="col-md-6">
+    <p>Recent ratings</p>
 
-<ul>
-  <% @ratings.recent.each do |rating| %>
-      <li> <%= rating %> <%= link_to rating.user.username, rating.user %> </li>
-  <% end %>
-</ul>
+    <ul>
+      <% @ratings.recent.each do |rating| %>
+          <li> <%= rating %> <%= link_to rating.user.username, rating.user %> </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Top 3 breweries</p>
 
-<p>Top 3 breweries</p>
+      <ul>
+        <% @breweries.top(3).each do |brewery| %>
+            <li> <%= brewery.name %>, <%= round(brewery.average_rating) %> </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p>Top 3 users</p>
 
-<ul>
-  <% @breweries.top(3).each do |brewery| %>
-      <li> <%= brewery.name %>, <%= round(brewery.average_rating) %> </li>
-  <% end %>
-</ul>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Fav. beer</th>
+          <th>Fav. style</th>
+          <th>Fav. brewery</th>
+          <th>ratings</th>
+        </tr>
+        </thead>
 
-<p>Top 3 users</p>
-
-<ul>
-  <% @users.top(3).each do |user| %>
-      <li> <%= user.username %>, <%= user.favorite_beer %>, <%= user.favorite_style %>, <%= user.favorite_brewery.name %>, <%= round(user.ratings.count) %> </li>
-  <% end %>
-</ul>
+        <tbody>
+        <% @users.top(3).each do |user| %>
+            <tr>
+              <td><%= user.username %></td>
+              <td><%= user.favorite_beer %></td>
+              <td><%= user.favorite_style %></td>
+              <td><%= user.favorite_brewery.name %></td>
+              <td><%= round(user.ratings.count) %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+</div>
 
 <%= link_to 'create new rating', new_rating_path %>
 

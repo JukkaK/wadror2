@@ -47177,3 +47177,1611 @@ DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a rel
   [1m[36mStyle Load (5.5ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" IN (1, 2, 3)[0m
   Rendered beers/index.json.jbuilder (1.4ms)
 Completed 200 OK in 66ms (Views: 5.8ms | ActiveRecord: 32.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 15:36:33 +0200
+Processing by BreweriesController#index as HTML
+Exist fragment? views/brewerylist- (2.0ms)
+  [1m[35mBrewery Load (8.7ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."active" = 't'
+  [1m[36mBrewery Load (6.4ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE (("breweries"."active" = 'f' OR "breweries"."active" IS NULL))[0m
+Read fragment views/brewerylist-name (18.5ms)
+  Rendered breweries/index.html.erb within layouts/application (20.3ms)
+  [1m[35mUser Load (6.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (11.9ms)
+  Rendered layouts/_navigation.html.erb (18.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 199ms (Views: 169.3ms | ActiveRecord: 21.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:34 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 15:36:35 +0200
+
+
+Started GET "/ratings" for 127.0.0.1 at 2014-02-18 15:36:36 +0200
+Processing by RatingsController#index as HTML
+DEPRECATION WARNING: Using #scope without passing a callable object is deprecated. For example `scope :red, where(color: 'red')` should be changed to `scope :red, -> { where(color: 'red') }`. There are numerous gotchas in the former usage and it makes the implementation more complicated and buggy. (If you prefer, you can just define a class method named `self.red`.). (called from <class:Rating> at /home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/models/rating.rb:9)
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings"[0m
+  [1m[35mRating Load (5.9ms)[0m  SELECT "ratings".* FROM "ratings"
+  [1m[36mBeer Load (6.4ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (5.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (6.1ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (6.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (6.3ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (6.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.7ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (6.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (5.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (5.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (5.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (6.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 113]]
+  Rendered ratings/_list.html.erb (147.3ms)
+  [1m[36mRating Load (5.8ms)[0m  [1mSELECT "ratings".* FROM "ratings" ORDER BY ratings.created_at DESC limit 5[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBrewery Load (6.3ms)[0m  SELECT "breweries".* FROM "breweries"
+  [1m[36m (6.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 2]]
+  [1m[36m (7.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[35m (6.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 4]]
+  [1m[36m (6.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 7]]
+  [1m[35m (6.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 11]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 12]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 13]]
+  [1m[36m (7.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 14]]
+  [1m[35m (5.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 15]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 16]]
+  [1m[35m (6.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 17]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 18]]
+  [1m[35m (6.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 19]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 20]]
+  [1m[35m (5.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 21]]
+  [1m[36m (6.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 22]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 23]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 24]]
+  [1m[35m (6.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 25]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 26]]
+  [1m[35m (7.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 27]]
+  [1m[36m (6.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 28]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 29]]
+  [1m[36m (6.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 30]]
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 31]]
+  [1m[36m (6.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 32]]
+  [1m[35m (6.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 33]]
+  [1m[36m (6.5ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 34]]
+  [1m[35m (6.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 35]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 36]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 37]]
+  [1m[36m (6.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 38]]
+  [1m[35m (5.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 39]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 40]]
+  [1m[35m (7.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 41]]
+  [1m[36m (7.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 42]]
+  [1m[35m (6.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 43]]
+  [1m[36m (6.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 44]]
+  [1m[35m (6.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 45]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 46]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 47]]
+  [1m[36m (6.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 48]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 49]]
+  [1m[36m (6.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 50]]
+  [1m[35m (6.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 51]]
+  [1m[36m (6.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 52]]
+  [1m[35m (6.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 53]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 54]]
+  [1m[35m (6.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 55]]
+  [1m[36m (6.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 56]]
+  [1m[35m (6.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 57]]
+  [1m[36m (6.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 58]]
+  [1m[35m (6.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 59]]
+  [1m[36m (6.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 60]]
+  [1m[35m (6.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 61]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  [1m[35mUser Load (7.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (6.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 4]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 9]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 10]]
+  [1m[36m (6.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 11]]
+  [1m[35m (8.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 12]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 13]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 14]]
+  [1m[36m (6.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 15]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 16]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 17]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 18]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 19]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 20]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 21]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 22]]
+  [1m[36m (6.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 23]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 24]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 25]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 26]]
+  [1m[36m (7.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 27]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 28]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 29]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 30]]
+  [1m[36m (7.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 31]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 32]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 33]]
+  [1m[35m (6.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 34]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 35]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 36]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 37]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 38]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[35m (6.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 40]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 41]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 42]]
+  [1m[36m (6.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 43]]
+  [1m[35m (6.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 44]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 45]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 46]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 47]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 48]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 49]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 50]]
+  [1m[36m (7.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 51]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 52]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 53]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 54]]
+  [1m[36m (6.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 55]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 56]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 57]]
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 58]]
+  [1m[36m (6.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 59]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 60]]
+  [1m[36m (6.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 61]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 62]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 63]]
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 64]]
+  [1m[36m (6.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 65]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 66]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 67]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 68]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 69]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 70]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 71]]
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 72]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 73]]
+  [1m[35m (8.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 74]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 75]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 76]]
+  [1m[36m (10.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 77]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 78]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 79]]
+  [1m[35m (6.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 80]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 81]]
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 82]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 83]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 84]]
+  [1m[36m (6.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 85]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 86]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 87]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 88]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 89]]
+  [1m[35m (6.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 90]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 91]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 92]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 93]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 94]]
+  [1m[36m (6.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 95]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 96]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 97]]
+  [1m[35m (24.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 98]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 99]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 100]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 101]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 102]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 103]]
+  [1m[35m (7.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 104]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 105]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 106]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 107]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 108]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 109]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 110]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 111]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 112]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 113]]
+  [1m[35mRating Exists (6.8ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mRating Load (8.7ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (5.7ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mRating Load (5.9ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStyle Load (6.3ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mStyle Load (6.2ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mStyle Load (6.1ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (6.2ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBrewery Load (6.3ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mRating Exists (5.6ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 3]]
+  [1m[36mRating Load (6.1ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 3]]
+  [1m[36mRating Load (5.8ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 3]]
+  [1m[36mRating Exists (5.5ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mRating Load (6.1ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1  [["user_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mRating Load (5.5ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 11]]
+  Rendered ratings/index.html.erb within layouts/application (2112.6ms)
+  [1m[35mUser Load (5.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (8.9ms)
+  Rendered layouts/_navigation.html.erb (12.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 2282ms (Views: 1001.4ms | ActiveRecord: 1232.3ms)
+
+
+Started GET "/ratings" for 127.0.0.1 at 2014-02-18 15:41:34 +0200
+Processing by RatingsController#index as HTML
+  [1m[36m (68.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings"[0m
+  [1m[35mRating Load (5.8ms)[0m  SELECT "ratings".* FROM "ratings"
+  [1m[36mBeer Load (5.8ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (5.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.6ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.7ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (6.4ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.7ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (6.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.8ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (5.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (5.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (5.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (6.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 113]]
+  Rendered ratings/_list.html.erb (168.4ms)
+  [1m[36mBrewery Load (5.9ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 1]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 3]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 4]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 7]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 11]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 12]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 13]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 14]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 15]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 16]]
+  [1m[36m (5.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 17]]
+  [1m[35m (6.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 18]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 19]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 20]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 21]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 22]]
+  [1m[36m (5.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 23]]
+  [1m[35m (6.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 24]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 25]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 26]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 27]]
+  [1m[35m (5.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 28]]
+  [1m[36m (5.5ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 29]]
+  [1m[35m (11.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 30]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 31]]
+  [1m[35m (5.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 32]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 33]]
+  [1m[35m (6.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 34]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 35]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 36]]
+  [1m[36m (5.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 37]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 38]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 39]]
+  [1m[35m (5.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 40]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 41]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 42]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 43]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 44]]
+  [1m[36m (5.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 45]]
+  [1m[35m (5.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 46]]
+  [1m[36m (5.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 47]]
+  [1m[35m (5.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 48]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 49]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 50]]
+  [1m[36m (6.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 52]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 53]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 54]]
+  [1m[36m (10.5ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 55]]
+  [1m[35m (5.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 56]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 57]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 58]]
+  [1m[36m (5.5ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 59]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 60]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 61]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 1]]
+  [1m[36mUser Load (6.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 9]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 10]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 11]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 13]]
+  [1m[36m (6.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 14]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 15]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 16]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 17]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 18]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 19]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 20]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 21]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 22]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 23]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 24]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 25]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 26]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 27]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 28]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 29]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 30]]
+  [1m[35m (6.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 31]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 32]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 33]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 34]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 35]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 36]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 37]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 38]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 39]]
+  [1m[36m (7.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 40]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 41]]
+  [1m[36m (6.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 43]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 44]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 45]]
+  [1m[36m (6.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 46]]
+  [1m[35m (5.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 47]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 48]]
+  [1m[35m (5.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 49]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 50]]
+  [1m[35m (5.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 51]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 52]]
+  [1m[35m (5.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 53]]
+  [1m[36m (4.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 54]]
+  [1m[35m (5.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 55]]
+  [1m[36m (9.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 56]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 57]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 58]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 59]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 60]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 61]]
+  [1m[36m (5.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 62]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 63]]
+  [1m[36m (5.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 64]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 65]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 66]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 67]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 68]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 69]]
+  [1m[36m (6.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 70]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 71]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 72]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 73]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 74]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 75]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 76]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 77]]
+  [1m[36m (10.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 78]]
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 79]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 80]]
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 81]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 82]]
+  [1m[35m (6.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 83]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 84]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 85]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 86]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 87]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 88]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 89]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 90]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 91]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 92]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 93]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 94]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 95]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 96]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 97]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 98]]
+  [1m[35m (6.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 99]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 100]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 101]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 102]]
+  [1m[35m (6.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 103]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 104]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 105]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 106]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 107]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 108]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 109]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 110]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 111]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 112]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mRating Exists (5.6ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mRating Load (6.2ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBrewery Load (5.7ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mRating Load (9.8ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mStyle Load (5.7ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStyle Load (5.5ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mStyle Load (5.5ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBrewery Load (5.9ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBrewery Load (5.8ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36mRating Exists (6.4ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mRating Load (5.5ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1  [["user_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mRating Load (6.1ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mRating Exists (5.3ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 11]]
+  [1m[36mRating Load (5.8ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 11]]
+  [1m[36mRating Load (5.7ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 11]]
+  Rendered ratings/index.html.erb within layouts/application (1977.2ms)
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (10.4ms)
+  Rendered layouts/_navigation.html.erb (15.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 2144ms (Views: 942.4ms | ActiveRecord: 1201.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 15:41:37 +0200
+
+
+Started GET "/ratings" for 127.0.0.1 at 2014-02-18 15:42:59 +0200
+Processing by RatingsController#index as HTML
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings"
+  [1m[36mRating Load (5.9ms)[0m  [1mSELECT "ratings".* FROM "ratings"[0m
+  [1m[35mBeer Load (5.6ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (5.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (5.2ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (5.3ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (5.7ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (5.6ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (5.7ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (5.5ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (5.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (5.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (6.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 113]]
+  Rendered ratings/_list.html.erb (165.4ms)
+  [1m[35mBrewery Load (5.8ms)[0m  SELECT "breweries".* FROM "breweries"
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 2]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 4]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 7]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 11]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 12]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 13]]
+  [1m[36m (8.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 14]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 15]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 16]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 17]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 18]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 19]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 20]]
+  [1m[35m (6.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 21]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 22]]
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 23]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 24]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 25]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 26]]
+  [1m[35m (6.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 27]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 28]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 29]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 30]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 31]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 32]]
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 33]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 34]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 35]]
+  [1m[36m (6.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 36]]
+  [1m[35m (5.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 37]]
+  [1m[36m (6.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 38]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 39]]
+  [1m[36m (6.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 40]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 41]]
+  [1m[36m (6.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 42]]
+  [1m[35m (5.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 43]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 44]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 45]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 46]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 47]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 48]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 49]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 50]]
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 51]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 52]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 53]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 54]]
+  [1m[35m (5.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 55]]
+  [1m[36m (5.5ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 56]]
+  [1m[35m (5.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 57]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 58]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 59]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 60]]
+  [1m[35m (5.2ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 61]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  [1m[35mUser Load (6.0ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (6.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 4]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 9]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 10]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 11]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 12]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 13]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 14]]
+  [1m[36m (9.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 15]]
+  [1m[35m (18.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 16]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 17]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 18]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 19]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 20]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 21]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 22]]
+  [1m[36m (6.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 23]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 24]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 25]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 26]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 27]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 28]]
+  [1m[36m (5.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 29]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 30]]
+  [1m[36m (6.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 31]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 32]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 33]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 34]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 35]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 36]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 37]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 38]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 40]]
+  [1m[36m (5.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 41]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 42]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 43]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 44]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 45]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 46]]
+  [1m[36m (10.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 47]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 48]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 49]]
+  [1m[35m (6.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 50]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 51]]
+  [1m[35m (6.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 52]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 53]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 54]]
+  [1m[36m (5.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 55]]
+  [1m[35m (5.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 56]]
+  [1m[36m (5.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 57]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 58]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 59]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 60]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 61]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 62]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 63]]
+  [1m[35m (5.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 64]]
+  [1m[36m (5.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 65]]
+  [1m[35m (5.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 66]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 67]]
+  [1m[35m (5.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 68]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 69]]
+  [1m[35m (6.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 70]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 71]]
+  [1m[35m (6.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 72]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 73]]
+  [1m[35m (7.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 74]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 75]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 76]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 77]]
+  [1m[35m (5.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 78]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 79]]
+  [1m[35m (6.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 80]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 81]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 82]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 83]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 84]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 85]]
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 86]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 87]]
+  [1m[35m (5.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 88]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 89]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 90]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 91]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 92]]
+  [1m[36m (5.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 93]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 94]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 95]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 96]]
+  [1m[36m (18.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 97]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 98]]
+  [1m[36m (7.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 99]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 100]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 101]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 102]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 103]]
+  [1m[35m (6.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 104]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 105]]
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 106]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 107]]
+  [1m[35m (6.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 108]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 109]]
+  [1m[35m (6.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 110]]
+  [1m[36m (6.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 111]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 112]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 113]]
+  [1m[35mRating Exists (5.4ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mRating Load (5.8ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (6.2ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mRating Load (5.8ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStyle Load (5.5ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mStyle Load (6.2ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mStyle Load (5.5ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (6.2ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBrewery Load (5.4ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mRating Exists (7.5ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 3]]
+  [1m[36mRating Load (5.4ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 3]]
+  [1m[36mRating Load (5.6ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 3]]
+  [1m[36mRating Exists (5.9ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mRating Load (8.4ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1  [["user_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mRating Load (6.0ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 11]]
+  Rendered ratings/index.html.erb within layouts/application (1921.8ms)
+  [1m[35mUser Load (5.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (10.9ms)
+  Rendered layouts/_navigation.html.erb (16.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 2090ms (Views: 920.2ms | ActiveRecord: 1168.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 15:43:01 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 15:43:01 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 15:43:01 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 15:43:01 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 15:43:01 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 15:43:01 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 15:43:01 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 15:43:02 +0200
+
+
+Started GET "/ratings" for 127.0.0.1 at 2014-02-18 15:46:16 +0200
+Processing by RatingsController#index as HTML
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings"[0m
+  [1m[35mRating Load (5.9ms)[0m  SELECT "ratings".* FROM "ratings"
+  [1m[36mBeer Load (5.7ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (5.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.6ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.7ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.7ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (6.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.6ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (5.8ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (5.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (5.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (5.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (6.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 113]]
+  Rendered ratings/_list.html.erb (172.2ms)
+  [1m[36mBrewery Load (6.0ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 1]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 3]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 4]]
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 7]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 11]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 12]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 13]]
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 14]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 15]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 16]]
+  [1m[36m (5.4ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 17]]
+  [1m[35m (9.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 18]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 19]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 20]]
+  [1m[36m (5.9ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 21]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 22]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 23]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 24]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 25]]
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 26]]
+  [1m[36m (5.3ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 27]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 28]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 29]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 30]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 31]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 32]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 33]]
+  [1m[35m (8.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 34]]
+  [1m[36m (5.5ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 35]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 36]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 37]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 38]]
+  [1m[36m (5.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 39]]
+  [1m[35m (5.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 40]]
+  [1m[36m (5.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 41]]
+  [1m[35m (5.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 42]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 43]]
+  [1m[35m (5.9ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 44]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 45]]
+  [1m[35m (8.8ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 46]]
+  [1m[36m (6.8ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 47]]
+  [1m[35m (8.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 48]]
+  [1m[36m (7.2ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 49]]
+  [1m[35m (7.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 50]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (5.4ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 52]]
+  [1m[36m (5.7ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 53]]
+  [1m[35m (5.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 54]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 55]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 56]]
+  [1m[36m (5.6ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 57]]
+  [1m[35m (6.3ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 58]]
+  [1m[36m (6.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 59]]
+  [1m[35m (5.5ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 60]]
+  [1m[36m (6.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 61]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ?  [["brewery_id", 1]]
+  [1m[36mUser Load (5.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 9]]
+  [1m[36m (5.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 10]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 11]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 13]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 14]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 15]]
+  [1m[36m (5.3ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 16]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 17]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 18]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 19]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 20]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 21]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 22]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 23]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 24]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 25]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 26]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 27]]
+  [1m[36m (7.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 28]]
+  [1m[35m (5.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 29]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 30]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 31]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 32]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 33]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 34]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 35]]
+  [1m[36m (6.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 36]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 37]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 38]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 39]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 40]]
+  [1m[35m (6.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 41]]
+  [1m[36m (5.9ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 43]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 44]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 45]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 46]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 47]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 48]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 49]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 50]]
+  [1m[35m (5.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 51]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 52]]
+  [1m[35m (6.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 53]]
+  [1m[36m (5.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 54]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 55]]
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 56]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 57]]
+  [1m[36m (6.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 58]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 59]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 60]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 61]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 62]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 63]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 64]]
+  [1m[35m (5.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 65]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 66]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 67]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 68]]
+  [1m[35m (5.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 69]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 70]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 71]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 72]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 73]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 74]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 75]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 76]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 77]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 78]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 79]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 80]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 81]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 82]]
+  [1m[35m (5.9ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 83]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 84]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 85]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 86]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 87]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 88]]
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 89]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 90]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 91]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 92]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 93]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 94]]
+  [1m[35m (6.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 95]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 96]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 97]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 98]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 99]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 100]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 101]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 102]]
+  [1m[35m (5.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 103]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 104]]
+  [1m[35m (25.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 105]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 106]]
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 107]]
+  [1m[36m (5.7ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 108]]
+  [1m[35m (5.8ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 109]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 110]]
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 111]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 112]]
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mRating Exists (5.5ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mRating Load (5.7ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBrewery Load (5.3ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mRating Load (5.5ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mStyle Load (5.4ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStyle Load (5.6ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mStyle Load (5.3ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBrewery Load (5.8ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBrewery Load (5.4ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36mRating Exists (5.8ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mRating Load (5.7ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1  [["user_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mRating Load (5.4ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mRating Exists (5.5ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 11]]
+  [1m[36mRating Load (5.3ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 11]]
+  [1m[36mRating Load (5.3ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 11]]
+  Rendered ratings/index.html.erb within layouts/application (1915.4ms)
+  [1m[36mUser Load (5.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (10.2ms)
+  Rendered layouts/_navigation.html.erb (14.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 2084ms (Views: 933.2ms | ActiveRecord: 1149.9ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:18 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:19 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:19 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 15:46:19 +0200
