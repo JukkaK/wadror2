@@ -28,4 +28,8 @@ Ratebeer::Application.routes.draw do
     post 'toggle_activity', on: :member
   end
 
+  get 'ngbeerlist', to:'beers#nglist'
+
+  get 'ngbrewerylist', to:'breweries#nglist'
+
 end

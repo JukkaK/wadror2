@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}</style>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ratebeer</title>
+    <meta content="Ratebeer" name="description" />
+    <link rel="stylesheet" media="all" href="/assets/application.css" data-turbolinks-track="true" />
+    <script src="/assets/application.js" data-turbolinks-track="true"></script>
+    
+  <link href="/mini-profiler-resources/includes.css?v=898a13ca6797c6bc1fee313e17d388b0" type="text/css" rel="stylesheet" /><script async="" type="text/javascript" src="/mini-profiler-resources/jquery.tmpl.js?v=898a13ca6797c6bc1fee313e17d388b0"></script></head>
+  <body>
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/breweries">breweries</a></li>
+<li><a href="/beers">beers</a></li>
+<li><a href="/styles">styles</a></li>
+<li><a href="/ratings">ratings</a></li>
+<li><a href="/users">users</a></li>
+<li><a href="/beer_clubs">clubs</a></li>
+<li><a href="/places">places</a></li>
+    <li><a href="/signin">signin</a></li>
+    <li><a href="/signup">signup</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  </header>
+
+  <main class=".container" role="main">
+    
+
+    <div class="row">
+      <div class="col-md-8">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+<script>
+    function BeersController($scope, $http) {
+        $http.get('beers.json').success( function(data, status, headers, config) {
+            $scope.beers = data;
+        });
+
+        $scope.order = 'name';
+
+        $scope.click = function (order){
+            $scope.order = order;
+            console.log(order);
+        }
+
+        $scope.searchText = '';
+    }
+</script>
+
+<h2>Beers</h2>
+
+<div ng-controller="BeersController" ng-app="" class="ng-scope">
+  search:  <input ng-model="searchText" class="ng-pristine ng-valid" />
+
+  <table>
+    <thead>
+    <tr><th> <a ng-click="click('name')">name</a> </th>
+    <th> <a ng-click="click('style.name')">style</a> </th>
+    <th> <a ng-click="click('brewery.name')">brewery</a> </th>
+    </tr></thead>
+    <tbody><!-- ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Fastenbier</td>
+      <td class="ng-binding">Rauchbier</td>
+      <td class="ng-binding">Schlenkerla</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Fastenbier</td>
+      <td class="ng-binding">Rauchbier</td>
+      <td class="ng-binding">Schlenkerla</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Lechte Weisse</td>
+      <td class="ng-binding">Weizen</td>
+      <td class="ng-binding">Ayinger</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Lechte Weisse</td>
+      <td class="ng-binding">Weizen</td>
+      <td class="ng-binding">Ayinger</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Nikolai</td>
+      <td class="ng-binding">Lager</td>
+      <td class="ng-binding">Koff</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Nikolai</td>
+      <td class="ng-binding">Lager</td>
+      <td class="ng-binding">Koff</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText -->
+  </tbody></table>
+
+</div>
+      </div>
+      <div class="col-md-4">
+        <img width="200" src="http://www.cs.helsinki.fi/u/mluukkai/wadror/pint.jpg" />
+      </div>
+    </div>
+
+  </main>
+  <script data-start-hidden="false" data-toggle-shortcut="Alt+P" data-authorized="true" data-controls="false" data-max-traces="10" data-children="false" data-trivial="false" data-position="left" data-ids="6inge31q6jgkaq07xisn,aivelakm79uke3hq6bjl,piz77sw22dga5zqz7oq6,lypzglzzqe0l2vqxv69v,t6seethyzx205c43viib,8agyrn9stjt1u5wrqrto,xn2nlzb929mvb2nmg1cu,7278xuei8ptsrgjqz44r,bwqo58rte29kid1zjh9c,ypzlsevgvw1g8vsssmsn" data-current-id="6inge31q6jgkaq07xisn" data-path="/mini-profiler-resources/" data-version="898a13ca6797c6bc1fee313e17d388b0" src="/mini-profiler-resources/includes.js?v=898a13ca6797c6bc1fee313e17d388b0" id="mini-profiler" type="text/javascript" async=""></script>
+
+
+<div class="profiler-results profiler-left profiler-no-controls"></div><script type="text/x-jquery-tmpl" id="profilerTemplate">
+
+  &lt;div class="profiler-result"&gt;
+
+    &lt;div class="profiler-button {{if HasDuplicateSqlTimings}}profiler-warning{{/if}}"&gt;
+    {{if HasDuplicateSqlTimings}}&lt;span class="profiler-nuclear"&gt;!&lt;/span&gt;{{/if}}
+      &lt;span class="profiler-number"&gt;
+        ${MiniProfiler.formatDuration(DurationMilliseconds)} &lt;span class="profiler-unit"&gt;ms&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class="profiler-popup"&gt;
+      &lt;div class="profiler-info"&gt;
+        &lt;span class="profiler-name"&gt;
+          ${Name} &lt;span class="profiler-overall-duration"&gt;(${MiniProfiler.formatDuration(DurationMilliseconds)} ms)&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class="profiler-server-time"&gt;${MachineName} on ${MiniProfiler.renderDate(Started)}&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="profiler-output"&gt;
+        &lt;table class="profiler-timings"&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;&lt;/th&gt;
+              &lt;th&gt;duration (ms)&lt;/th&gt;
+              &lt;th class="profiler-duration-with-children"&gt;with children (ms)&lt;/th&gt;
+              &lt;th class="time-from-start"&gt;from start (ms)&lt;/th&gt;
+            {{if HasSqlTimings}}
+              &lt;th colspan="2"&gt;query time (ms)&lt;/th&gt;
+            {{/if}}
+            {{each CustomTimingNames}}
+              &lt;th colspan="2"&gt;${$value.toLowerCase()} (ms)&lt;/th&gt;
+            {{/each}}
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            {{tmpl({timing:Root, page:this.data}) "#timingTemplate"}}
+          &lt;/tbody&gt;
+          &lt;tfoot&gt;
+            &lt;tr&gt;
+              &lt;td colspan="3"&gt;
+                {{if !ClientTimings}}
+                {{tmpl "#linksTemplate"}}
+                {{/if}}
+                &lt;a class="profiler-toggle-duration-with-children" title="toggles column with aggregate child durations"&gt;show time with children&lt;/a&gt;
+              &lt;/td&gt;
+            {{if HasSqlTimings}}
+              &lt;td colspan="2" class="profiler-number profiler-percent-in-sql" title="${MiniProfiler.getSqlTimingsCount(Root)} queries spent ${MiniProfiler.formatDuration(DurationMillisecondsInSql)} ms of total request time"&gt;
+                ${MiniProfiler.formatDuration(DurationMillisecondsInSql / DurationMilliseconds * 100)}
+                &lt;span class="profiler-unit"&gt;% in sql&lt;/span&gt;
+              &lt;/td&gt;
+            {{/if}}
+            {{each CustomTimingNames}}
+              &lt;td colspan="2" class="profiler-number profiler-percentage-in-sql" title="${CustomTimingStats[$value].Count} ${$value.toLowerCase()} invocations spent ${MiniProfiler.formatDuration(CustomTimingStats[$value].Duration)} ms of total request time"&gt;
+                ${MiniProfiler.formatDuration(CustomTimingStats[$value].Duration / DurationMilliseconds * 100)}
+                &lt;span class="profiler-unit"&gt;% in ${$value.toLowerCase()}&lt;/span&gt;
+              &lt;/td&gt;
+            {{/each}}
+            &lt;/tr&gt;
+          &lt;/tfoot&gt;
+        &lt;/table&gt;
+        {{if ClientTimings}}
+        &lt;table class="profiler-timings profiler-client-timings"&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;client event&lt;/th&gt;
+              &lt;th&gt;duration (ms)&lt;/th&gt;
+              &lt;th&gt;from start (ms)&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            {{each MiniProfiler.getClientTimings(ClientTimings)}}
+            &lt;tr class="{{if $value.isTrivial }}profiler-trivial{{/if}}"&gt;
+              &lt;td class="profiler-label"&gt;${$value.name}&lt;/td&gt;
+              &lt;td class="profiler-duration"&gt;
+                {{if $value.duration &gt;= 0}}
+                &lt;span class="profiler-unit"&gt;&lt;/span&gt;${MiniProfiler.formatDuration($value.duration)}
+                {{/if}}
+              &lt;/td&gt;
+              &lt;td class="profiler-duration time-from-start"&gt;
+                &lt;span class="profiler-unit"&gt;+&lt;/span&gt;${MiniProfiler.formatDuration($value.start)}
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            {{/each}}
+          &lt;/tbody&gt;
+          &lt;tfoot&gt;
+            &lt;td colspan="3"&gt;
+              {{tmpl "#linksTemplate"}}
+            &lt;/td&gt;
+          &lt;/tfoot&gt;
+        &lt;/table&gt;
+        {{/if}}
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  {{if HasSqlTimings}}
+    &lt;div class="profiler-queries"&gt;
+      &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style="text-align:right"&gt;step&lt;br /&gt;time from start&lt;br /&gt;query type&lt;br /&gt;duration&lt;/th&gt;
+          &lt;th style="text-align:left"&gt;call stack&lt;br /&gt;query&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        {{each(i, s) MiniProfiler.getSqlTimings(Root)}}
+          {{tmpl({ g:s.prevGap }) "#sqlGapTemplate"}}
+          {{tmpl({ i:i, s:s }) "#sqlTimingTemplate"}}
+          {{if s.nextGap}}
+            {{tmpl({ g:s.nextGap }) "#sqlGapTemplate"}}
+          {{/if}}
+        {{/each}}
+      &lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;p class="profiler-trivial-gap-container"&gt;
+        &lt;a class="profiler-toggle-trivial-gaps" href="#"&gt;show trivial gaps&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+  {{/if}}
+
+  &lt;/div&gt;
+
+</script>
+
+<script type="text/x-jquery-tmpl" id="linksTemplate">
+  &lt;a href="${MiniProfiler.shareUrl(Id)}" class="profiler-share-profiler-results" target="_blank"&gt;share&lt;/a&gt;
+  {{if CustomLink}}
+  &lt;a href="${CustomLink}" class="profiler-custom-link" target="_blank"&gt;${CustomLinkName}&lt;/a&gt;
+  {{/if}}
+  {{if HasTrivialTimings}}
+  &lt;a class="profiler-toggle-trivial" data-show-on-load="${HasAllTrivialTimings}" title="toggles any rows with &amp;lt; ${TrivialDurationThresholdMilliseconds} ms"&gt;
+    show trivial
+  &lt;/a&gt;
+  {{/if}}
+</script>
+
+<script type="text/x-jquery-tmpl" id="timingTemplate">
+
+  &lt;tr class="{{if timing.IsTrivial }}profiler-trivial{{/if}}" data-timing-id="${timing.Id}"&gt;
+    &lt;td class="profiler-label" title="{{if timing.Name &amp;&amp; timing.Name.length &gt; 45 }}${timing.Name}{{/if}}"&gt;
+      &lt;span class="profiler-indent"&gt;${MiniProfiler.renderIndent(timing.Depth)}&lt;/span&gt; ${timing.Name.slice(0,45)}{{if timing.Name &amp;&amp; timing.Name.length &gt; 45 }}...{{/if}}
+    &lt;/td&gt;
+    &lt;td class="profiler-duration" title="duration of this step without any children's durations"&gt;
+      ${MiniProfiler.formatDuration(timing.DurationWithoutChildrenMilliseconds)}
+    &lt;/td&gt;
+    &lt;td class="profiler-duration profiler-duration-with-children" title="duration of this step and its children"&gt;
+      ${MiniProfiler.formatDuration(timing.DurationMilliseconds)}
+    &lt;/td&gt;
+    &lt;td class="profiler-duration time-from-start" title="time elapsed since profiling started"&gt;
+      &lt;span class="profiler-unit"&gt;+&lt;/span&gt;${MiniProfiler.formatDuration(timing.StartMilliseconds)}
+    &lt;/td&gt;
+
+  {{if timing.HasSqlTimings}}
+    &lt;td class="profiler-duration {{if timing.HasDuplicateSqlTimings}}profiler-warning{{/if}}" title="{{if timing.HasDuplicateSqlTimings}}duplicate queries detected - {{/if}}{{if timing.ExecutedReaders &gt; 0 || timing.ExecutedScalars &gt; 0 || timing.ExecutedNonQueries &gt; 0}}${timing.ExecutedReaders} reader, ${timing.ExecutedScalars} scalar, ${timing.ExecutedNonQueries} non-query statements executed{{/if}}"&gt;
+      &lt;a class="profiler-queries-show"&gt;
+        {{if timing.HasDuplicateSqlTimings}}&lt;span class="profiler-nuclear"&gt;!&lt;/span&gt;{{/if}}
+        ${timing.SqlTimings.length} &lt;span class="profiler-unit"&gt;sql&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td class="profiler-duration" title="aggregate duration of all queries in this step (excludes children)"&gt;
+      ${MiniProfiler.formatDuration(timing.SqlTimingsDurationMilliseconds)}
+    &lt;/td&gt;
+  {{else}}
+    &lt;td colspan="2"&gt;&lt;/td&gt;
+  {{/if}}
+
+  {{each page.CustomTimingNames}}
+    {{if timing.CustomTimings &amp;&amp; timing.CustomTimings[$value]}}
+      &lt;td class="profiler-duration" title="aggregate number of all ${$value.toLowerCase()} invocations in this step (excludes children)"&gt;
+        ${timing.CustomTimings[$value].length} ${$value.toLowerCase()}
+      &lt;/td&gt;
+      &lt;td class="profiler-duration" title="aggregate duration of all ${$value.toLowerCase()} invocations in this step (excludes children)"&gt;
+        ${MiniProfiler.formatDuration(timing.CustomTimingStats[$value].Duration)}
+      &lt;/td&gt;
+    {{else}}
+      &lt;td colspan="2"&gt;&lt;/td&gt;
+    {{/if}}
+  {{/each}}
+
+  &lt;/tr&gt;
+
+  {{if timing.HasChildren}}
+    {{each timing.Children}}
+      {{tmpl({timing: $value, page: page}) "#timingTemplate"}}
+    {{/each}}
+  {{/if}}
+
+</script>
+
+<script type="text/x-jquery-tmpl" id="sqlTimingTemplate">
+
+  &lt;tr class="{{if i % 2 == 1}}profiler-odd{{/if}}" data-timing-id="${s.ParentTimingId}"&gt;
+    &lt;td class="profiler-info"&gt;
+      &lt;div&gt;${s.ParentTimingName}&lt;/div&gt;
+      &lt;div class="profiler-number"&gt;&lt;span class="profiler-unit"&gt;T+&lt;/span&gt;${MiniProfiler.formatDuration(s.StartMilliseconds)} &lt;span class="profiler-unit"&gt;ms&lt;/span&gt;&lt;/div&gt;
+      &lt;div&gt;
+        {{if s.IsDuplicate}}&lt;span class="profiler-warning"&gt;DUPLICATE&lt;/span&gt;{{/if}}
+        ${MiniProfiler.renderExecuteType(s.ExecuteType)}
+      &lt;/div&gt;
+      &lt;div title="{{if s.ExecuteType == 3}}first result fetched: ${s.FirstFetchDurationMilliseconds}ms{{/if}}"&gt;${MiniProfiler.formatDuration(s.DurationMilliseconds)} &lt;span class="profiler-unit"&gt;ms&lt;/span&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;div class="query"&gt;
+        &lt;pre class="profiler-stack-trace"&gt;${s.StackTraceSnippet}&lt;/pre&gt;
+        &lt;pre class="prettyprint lang-sql"&gt;&lt;code&gt;${s.FormattedCommandString}   &lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+</script>
+
+<script type="text/x-jquery-tmpl" id="sqlGapTemplate">
+
+  &lt;tr class="profiler-gap-info{{if g.duration &lt; 4}} profiler-trivial-gaps{{/if}}"&gt;
+    &lt;td class="profiler-info"&gt;
+      ${g.duration} &lt;span class="profiler-unit"&gt;ms&lt;/span&gt;  
+    &lt;/td&gt;
+    &lt;td class="query"&gt;
+      &lt;div&gt;${g.topReason.name} &amp;mdash; ${g.topReason.duration.toFixed(2)} &lt;span class="profiler-unit"&gt;ms&lt;/span&gt;&lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+</script>
+</body></html>

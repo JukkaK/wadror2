@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}</style>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ratebeer</title>
+    <meta content="Ratebeer" name="description" />
+    <link rel="stylesheet" media="all" href="/assets/application.css" data-turbolinks-track="true" />
+    <script src="/assets/application.js" data-turbolinks-track="true"></script>
+    
+  <link href="/mini-profiler-resources/includes.css?v=898a13ca6797c6bc1fee313e17d388b0" type="text/css" rel="stylesheet" /><script async="" type="text/javascript" src="/mini-profiler-resources/jquery.tmpl.js?v=898a13ca6797c6bc1fee313e17d388b0"></script></head>
+  <body>
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/breweries">breweries</a></li>
+<li><a href="/beers">beers</a></li>
+<li><a href="/styles">styles</a></li>
+<li><a href="/ratings">ratings</a></li>
+<li><a href="/users">users</a></li>
+<li><a href="/beer_clubs">clubs</a></li>
+<li><a href="/places">places</a></li>
+    <li><a href="/signin">signin</a></li>
+    <li><a href="/signup">signup</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  </header>
+
+  <main class=".container" role="main">
+    
+
+    <div class="row">
+      <div class="col-md-8">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+<script>
+    function BeersController($scope, $http) {
+        $http.get('beers.json').success( function(data, status, headers, config) {
+            $scope.beers = data;
+        });
+
+        $scope.order = 'name';
+
+        $scope.click = function (order){
+            $scope.order = order;
+            console.log(order);
+        }
+
+        $scope.searchText = '';
+    }
+</script>
+
+<h2>Beers</h2>
+
+<div ng-controller="BeersController" ng-app="" class="ng-scope">
+  search:  <input ng-model="searchText" class="ng-pristine ng-valid" />
+
+  <table>
+    <thead>
+    <tr><th> <a ng-click="click('name')">name</a> </th>
+    <th> <a ng-click="click('style.name')">style</a> </th>
+    <th> <a ng-click="click('brewery.name')">brewery</a> </th>
+    </tr></thead>
+    <tbody><!-- ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Fastenbier</td>
+      <td class="ng-binding">Rauchbier</td>
+      <td class="ng-binding">Schlenkerla</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Lechte Weisse</td>
+      <td class="ng-binding">Weizen</td>
+      <td class="ng-binding">Ayinger</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText --><tr ng-repeat="beer in beers| orderBy:order | filter:searchText" class="ng-scope">
+      <td class="ng-binding">Nikolai</td>
+      <td class="ng-binding">Lager</td>
+      <td class="ng-binding">Koff</td>
+    </tr><!-- end ngRepeat: beer in beers| orderBy:order | filter:searchText -->
+  </tbody></table>
+
+</div>
+      </div>
+      <div class="col-md-4">
+        <img width="200" src="http://www.cs.helsinki.fi/u/mluukkai/wadror/pint.jpg" />
+      </div>
+    </div>
+
+  </main>
+  <script data-start-hidden="false" data-toggle-shortcut="Alt+P" data-authorized="true" data-controls="false" data-max-traces="10" data-children="false" data-trivial="false" data-position="left" data-ids="1c2j8grxmxxdjtiock5h,c206f6nohsfn0my4fjo4,tewbzar9pp58iuksvcer,lkhyqafdkhhvkg9xvlhm,reickprbdr01kl7yamd1,5hbi72x9sylzgnenr4es,un4a97ebstp5r749jyjw,qlzr8ypj86j6rzo2vof8,2565jkotpufp90pq6633,cbqzt80eqd5zdlj9d0uv" data-current-id="1c2j8grxmxxdjtiock5h" data-path="/mini-profiler-resources/" data-version="898a13ca6797c6bc1fee313e17d388b0" src="/mini-profiler-resources/includes.js?v=898a13ca6797c6bc1fee313e17d388b0" id="mini-profiler" type="text/javascript" async=""></script>
+
+
+<div class="profiler-results profiler-left profiler-no-controls"></div></body></html>

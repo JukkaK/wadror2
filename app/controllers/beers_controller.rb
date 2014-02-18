@@ -1,9 +1,10 @@
 class BeersController < ApplicationController
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
-  before_action :ensure_that_signed_in, except: [:index, :show]
   before_action :ensure_that_signed_in_as_admin, only: [:destroy]
   before_action :set_breweries_and_styles_for_template, only: [:new, :edit, :create]
   before_action :skip_if_cached, only:[:index]
+  before_action :ensure_that_signed_in, except: [:index, :show, :list, :nglist]
+
 
   def index
     @beers = Beer.includes(:brewery, :style).all
@@ -93,5 +94,8 @@ class BeersController < ApplicationController
   def skip_if_cached
     @order = params[:order] || 'name'
     return render :index if fragment_exist?( "beerlist-#{params[:order]}"  )
+  end
+
+  def nglist
   end
 end

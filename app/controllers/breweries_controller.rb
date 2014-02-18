@@ -1,6 +1,6 @@
 class BreweriesController < ApplicationController
   before_action :set_brewery, only: [:show, :edit, :update, :destroy]
-  before_action :ensure_that_signed_in, except: [:index, :show]
+  before_action :ensure_that_signed_in, except: [:index, :show, :list, :nglist]
   before_action :ensure_that_signed_in_as_admin, only: [:destroy]
   before_action :skip_if_cached, only:[:index]
 
@@ -101,5 +101,8 @@ class BreweriesController < ApplicationController
   def skip_if_cached
     @order = params[:order] || 'name'
     return render :index if fragment_exist?( "brewerylist-#{params[:order]}"  )
+  end
+
+  def nglist
   end
 end
