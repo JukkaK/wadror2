@@ -67,3 +67,8 @@ end
 gem "rails-settings-cached", "0.3.1"
 
 gem 'rack-mini-profiler'
+
+gem 'bootstrap-sass'
+group :development do
+  gem 'rails_layout'
+end

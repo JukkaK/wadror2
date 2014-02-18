@@ -41190,3 +41190,1926 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 10:12:20 +0200
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 10:12:20 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 11:51:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (17.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BreweriesController#index as HTML
+Exist fragment? views/brewerylist- (2.1ms)
+  [1m[35mBrewery Load (0.6ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."active" = 't'
+  [1m[36mBrewery Load (0.3ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE (("breweries"."active" = 'f' OR "breweries"."active" IS NULL))[0m
+Read fragment views/brewerylist-name (22.7ms)
+  Rendered breweries/index.html.erb within layouts/application (39.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_navigation.html.erb (29.9ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 6169ms (Views: 6018.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 11:51:37 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 11:52:08 +0200
+Processing by BreweriesController#index as HTML
+Exist fragment? views/brewerylist- (0.2ms)
+  [1m[35mBrewery Load (6.1ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."active" = 't'
+  [1m[36mBrewery Load (5.7ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE (("breweries"."active" = 'f' OR "breweries"."active" IS NULL))[0m
+Read fragment views/brewerylist-name (3.1ms)
+  Rendered breweries/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (54.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 343ms (Views: 324.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 11:52:09 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 12:20:14 +0200
+Processing by BreweriesController#index as HTML
+Exist fragment? views/brewerylist- (1.8ms)
+  [1m[35mBrewery Load (5.9ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."active" = 't'
+  [1m[36mBrewery Load (5.4ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE (("breweries"."active" = 'f' OR "breweries"."active" IS NULL))[0m
+Read fragment views/brewerylist-name (30.0ms)
+  Rendered breweries/index.html.erb within layouts/application (31.9ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (64.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 457ms (Views: 437.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-02-18 12:37:59 +0200
+Processing by BeersController#index as HTML
+Exist fragment? views/beerlist- (2.6ms)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/controllers/beers_controller.rb:9)
+  [1m[35mBeer Load (5.5ms)[0m  SELECT "beers".* FROM "beers"
+  [1m[36mBrewery Load (5.9ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" IN (1, 2, 3, 4)[0m
+  [1m[35mStyle Load (5.7ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" IN (1, 2, 3)
+Read fragment views/beerlist-name (11.3ms)
+  Rendered beers/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (5.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 794ms (Views: 197.4ms | ActiveRecord: 28.5ms)
+
+
+Started GET "/beer_clubs" for 127.0.0.1 at 2014-02-18 12:38:38 +0200
+Processing by BeerClubsController#index as HTML
+  [1m[36mBeerClub Load (6.5ms)[0m  [1mSELECT "beer_clubs".* FROM "beer_clubs"[0m
+  Rendered beer_clubs/index.html.erb within layouts/application (29.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (4.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 189ms (Views: 144.0ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/beer_clubs" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+Processing by BeerClubsController#index as HTML
+  [1m[35mBeerClub Load (5.4ms)[0m  SELECT "beer_clubs".* FROM "beer_clubs"
+  Rendered beer_clubs/index.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (3.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 119ms (Views: 113.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:49 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:50 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:50 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:38:50 +0200
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-02-18 12:40:22 +0200
+Processing by BeersController#index as HTML
+Exist fragment? views/beerlist- (1.8ms)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/controllers/beers_controller.rb:9)
+  [1m[36mBeer Load (5.3ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  [1m[35mBrewery Load (5.3ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" IN (1, 2, 3, 4)
+  [1m[36mStyle Load (5.3ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" IN (1, 2, 3)[0m
+Read fragment views/beerlist-name (8.2ms)
+  Rendered beers/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (6.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 150ms (Views: 123.1ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-02-18 12:40:24 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-02-18 12:40:33 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fMW80Z7JfbyzmkjBI5lWcVJDlE94oMv9ArLC5wmCLeA=", "username"=>"Testi1", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (5.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'Testi1' LIMIT 1
+Redirected to http://localhost:8022/signin
+Completed 302 Found in 547ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-02-18 12:40:33 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:34 +0200
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fMW80Z7JfbyzmkjBI5lWcVJDlE94oMv9ArLC5wmCLeA=", "username"=>"Testi2", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (5.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'Testi2' LIMIT 1[0m
+Redirected to http://localhost:8022/users/113
+Completed 302 Found in 106ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[35mUser Load (14.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "113"]]
+DEPRECATION WARNING: Using #scope without passing a callable object is deprecated. For example `scope :red, where(color: 'red')` should be changed to `scope :red, -> { where(color: 'red') }`. There are numerous gotchas in the former usage and it makes the implementation more complicated and buggy. (If you prefer, you can just define a class method named `self.red`.). (called from <class:Rating> at /home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/models/rating.rb:9)
+  [1m[36mRating Exists (5.7ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mBeerClub Exists (6.4ms)[0m  SELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mRating Load (5.3ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 113]]
+  [1m[35mUser Load (5.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (239.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (3.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 352ms (Views: 304.1ms | ActiveRecord: 44.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:44 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:45 +0200
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-02-18 12:40:46 +0200
+Processing by BeersController#index as HTML
+Exist fragment? views/beerlist- (0.1ms)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/ad/fshome3/u3/k/koskelin/Linux/sorsat/wadror/vko4ratebeer/app/controllers/beers_controller.rb:9)
+  [1m[35mBeer Load (5.6ms)[0m  SELECT "beers".* FROM "beers"
+  [1m[36mBrewery Load (7.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" IN (1, 2, 3, 4)[0m
+  [1m[35mStyle Load (4.9ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" IN (1, 2, 3)
+Read fragment views/beerlist-name (2.9ms)
+  [1m[36mUser Load (5.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered beers/index.html.erb within layouts/application (11.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 32.7ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/beers/13" for 127.0.0.1 at 2014-02-18 12:40:49 +0200
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mBeer Load (5.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", "13"]]
+Cache digest for beers/show.xml: e523c90ca49394a8c33aff4e31282cd7
+Read fragment views/beers/13-20140217115429777227000/e523c90ca49394a8c33aff4e31282cd7 (7.3ms)
+  [1m[35mStyle Load (5.3ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mBrewery Load (5.4ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mRating Exists (5.6ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."beer_id" = ? LIMIT 1  [["beer_id", 13]]
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."beer_id" = ?[0m  [["beer_id", 13]]
+  [1m[35m (5.6ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."beer_id" = ?  [["beer_id", 13]]
+Write fragment views/beers/13-20140217115429777227000/e523c90ca49394a8c33aff4e31282cd7 (64.7ms)
+  [1m[36mUser Load (5.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered beers/show.html.erb within layouts/application (353.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.erb (5.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 444ms (Views: 397.2ms | ActiveRecord: 37.7ms)
+
+
+Started GET "/beers/13" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mBeer Load (5.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", "13"]]
+Cache digest for beers/show.html: 32d3d75838ea255408c628b3ef1c9cef
+Read fragment views/beers/13-20140217115429777227000/32d3d75838ea255408c628b3ef1c9cef (1.0ms)
+  [1m[35mStyle Load (5.2ms)[0m  SELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mBrewery Load (5.2ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mRating Exists (5.3ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."beer_id" = ? LIMIT 1  [["beer_id", 13]]
+  [1m[36m (6.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."beer_id" = ?[0m  [["beer_id", 13]]
+  [1m[35m (5.7ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."beer_id" = ?  [["beer_id", 13]]
+Write fragment views/beers/13-20140217115429777227000/32d3d75838ea255408c628b3ef1c9cef (49.8ms)
+  [1m[36mUser Load (5.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered beers/show.html.erb within layouts/application (108.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 191ms (Views: 149.8ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:40:59 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:41:00 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:41:00 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:41:00 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:41:00 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:41:00 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:41:00 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:41:00 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:41:00 +0200
+
+
+Started GET "/breweries" for 127.0.0.1 at 2014-02-18 12:42:22 +0200
+Processing by BreweriesController#index as HTML
+Exist fragment? views/brewerylist- (1.8ms)
+  [1m[36mBrewery Load (6.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."active" = 't'[0m
+  [1m[35mBrewery Load (6.1ms)[0m  SELECT "breweries".* FROM "breweries" WHERE (("breweries"."active" = 'f' OR "breweries"."active" IS NULL))
+Read fragment views/brewerylist-name (16.7ms)
+  Rendered breweries/index.html.erb within layouts/application (17.8ms)
+  [1m[36mUser Load (5.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (10.6ms)
+  Rendered layouts/_navigation.html.erb (15.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 150.7ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/breweries/4" for 127.0.0.1 at 2014-02-18 12:42:23 +0200
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBrewery Load (5.4ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT 1  [["id", "4"]]
+Cache digest for breweries/show.xml: b4dbfb7a2adebf10190847d6e52d3f00
+Read fragment views/breweries/4-20140217120354630392000/b4dbfb7a2adebf10190847d6e52d3f00 (35.2ms)
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered breweries/show.html.erb within layouts/application (48.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 124ms (Views: 112.1ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:42:55 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (6.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (5.9ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (5.7ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (5.6ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (5.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (37.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (7.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 104ms (Views: 72.9ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:48:20 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (5.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (6.4ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (5.2ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (30.2ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (6.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (61.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (4.9ms)
+  Rendered layouts/_navigation.html.erb (57.9ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 430ms (Views: 372.6ms | ActiveRecord: 54.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:48:21 +0200
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (6.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (5.6ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (5.8ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (5.5ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (6.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (36.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (4.9ms)
+  Rendered layouts/_navigation.html.erb (62.9ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 419ms (Views: 386.4ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:29 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:50:30 +0200
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:51:11 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (6.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (6.6ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (8.2ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (7.6ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (6.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (42.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (6.1ms)
+  Rendered layouts/_navigation.html.erb (65.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 364ms (Views: 325.9ms | ActiveRecord: 35.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:12 +0200
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:51:15 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (5.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (6.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (5.8ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (5.7ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (6.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (36.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (5.7ms)
+  Rendered layouts/_navigation.html.erb (34.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 157ms (Views: 124.8ms | ActiveRecord: 29.5ms)
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (5.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (5.7ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (5.4ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (5.5ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (5.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (72.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (6.0ms)
+  Rendered layouts/_navigation.html.erb (61.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 424ms (Views: 393.3ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:46 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:51:47 +0200
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:52:10 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[35mUser Load (5.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "113"]]
+  [1m[36mRating Exists (5.5ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mBeerClub Exists (5.5ms)[0m  SELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mRating Load (5.6ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 113]]
+  [1m[35mUser Load (5.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (34.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (6.8ms)
+  Rendered layouts/_navigation.html.erb (60.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 318ms (Views: 287.8ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:11 +0200
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (4.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (5.6ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (5.8ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (5.5ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (5.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (34.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (6.3ms)
+  Rendered layouts/_navigation.html.erb (70.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 326ms (Views: 296.2ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:37 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:38 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:38 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:38 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:52:38 +0200
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:53:22 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (5.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (5.5ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (5.3ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (5.3ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (33.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (6.2ms)
+  Rendered layouts/_navigation.html.erb (58.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 386ms (Views: 357.1ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:23 +0200
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (5.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (5.6ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mBeerClub Exists (5.7ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (5.4ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mUser Load (6.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (35.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (4.9ms)
+  Rendered layouts/_navigation.html.erb (57.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 314ms (Views: 282.3ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:43 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:44 +0200
+
+
+Started GET "/ratings/new" for 127.0.0.1 at 2014-02-18 12:53:47 +0200
+Processing by RatingsController#new as HTML
+  [1m[36mUser Load (5.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mBeer Load (6.0ms)[0m  SELECT "beers".* FROM "beers"
+  [1m[36mBrewery Load (5.3ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (6.3ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBrewery Load (5.5ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mBrewery Load (5.3ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered ratings/new.html.erb within layouts/application (73.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (4.8ms)
+  Rendered layouts/_navigation.html.erb (34.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 261ms (Views: 223.0ms | ActiveRecord: 34.2ms)
+
+
+Started POST "/ratings" for 127.0.0.1 at 2014-02-18 12:53:52 +0200
+Processing by RatingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fMW80Z7JfbyzmkjBI5lWcVJDlE94oMv9ArLC5wmCLeA=", "rating"=>{"beer_id"=>"1", "score"=>"15"}, "commit"=>"Create Rating"}
+  [1m[35mUser Load (5.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (37.5ms)[0m  INSERT INTO "ratings" ("beer_id", "created_at", "score", "updated_at") VALUES (?, ?, ?, ?)  [["beer_id", 1], ["created_at", Tue, 18 Feb 2014 10:53:52 UTC +00:00], ["score", 15], ["updated_at", Tue, 18 Feb 2014 10:53:52 UTC +00:00]]
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "beers" SET "updated_at" = '2014-02-18 10:53:52.503840' WHERE "beers"."id" = 1
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "breweries" SET "updated_at" = '2014-02-18 10:53:52.507835' WHERE "breweries"."id" = 1
+  [1m[36m (49.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (8.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (11.8ms)[0m  UPDATE "ratings" SET "user_id" = ?, "updated_at" = ? WHERE "ratings"."id" = 31  [["user_id", 113], ["updated_at", Tue, 18 Feb 2014 10:53:52 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "beers" SET "updated_at" = '2014-02-18 10:53:52.588872' WHERE "beers"."id" = 1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "breweries" SET "updated_at" = '2014-02-18 10:53:52.591510' WHERE "breweries"."id" = 1
+  [1m[36m (28.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (10.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+Redirected to http://localhost:8022/users/113
+Completed 302 Found in 190ms (ActiveRecord: 152.9ms)
+
+
+Started GET "/users/113" for 127.0.0.1 at 2014-02-18 12:53:52 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"113"}
+  [1m[36mUser Load (7.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "113"]]
+  [1m[35mRating Exists (5.9ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."user_id" = ?[0m  [["user_id", 113]]
+  [1m[35mBeerClub Exists (5.4ms)[0m  SELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 113]]
+  [1m[36mRating Load (5.6ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mBeer Load (5.4ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ? ORDER BY "ratings"."score" DESC LIMIT 1  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBrewery Load (5.3ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 113]]
+  [1m[35mRating Load (5.2ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStyle Load (5.4ms)[0m  [1mSELECT "styles".* FROM "styles" WHERE "styles"."id" = ? ORDER BY "styles"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (5.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered users/show.html.erb within layouts/application (84.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (3.0ms)
+  Rendered layouts/_navigation.html.erb (5.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 122ms (Views: 61.6ms | ActiveRecord: 57.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:52 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:52 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 12:53:53 +0200
+
+
+Started GET "/ratings/new" for 127.0.0.1 at 2014-02-18 12:53:55 +0200
+Processing by RatingsController#new as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mBeer Load (5.5ms)[0m  SELECT "beers".* FROM "beers"
+  [1m[36mBrewery Load (4.8ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (4.9ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBrewery Load (5.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mBrewery Load (5.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered ratings/new.html.erb within layouts/application (37.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (3.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 33.4ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 12:54:01 +0200
+Processing by BreweriesController#index as HTML
+Exist fragment? views/brewerylist- (1.0ms)
+  [1m[35mBrewery Load (5.9ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."active" = 't'
+  [1m[36mBrewery Load (8.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE (("breweries"."active" = 'f' OR "breweries"."active" IS NULL))[0m
+Read fragment views/brewerylist-name (10.9ms)
+  Rendered breweries/index.html.erb within layouts/application (11.7ms)
+  [1m[35mUser Load (5.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 113]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 113]]
+  Rendered layouts/_navigation_links.html.erb (10.3ms)
+  Rendered layouts/_navigation.html.erb (12.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 126ms (Views: 101.5ms | ActiveRecord: 19.6ms)
