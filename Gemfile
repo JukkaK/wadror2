@@ -65,3 +65,5 @@ group :test do
 end
 
 gem "rails-settings-cached", "0.3.1"
+
+gem 'rack-mini-profiler'

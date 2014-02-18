@@ -1,0 +1,24 @@
+o: ActiveSupport::Cache::Entry:@valueI"
+
+    <h2>BrewDog
+    </h2>
+
+    <p>
+      <em>Established year:</em>
+      2007
+    </p>
+
+    <p>Number of beers 4 </p>
+
+    <ul>
+          <li><a href="/beers/9">Punk IPA</a></li>
+          <li><a href="/beers/10">Nanny State</a></li>
+          <li><a href="/beers/13">Hardcore IPA</a></li>
+          <li><a href="/beers/14">Le Kukko</a></li>
+    </ul>
+
+        <p>Has 7 ratings, average 28.4 </p>
+
+    <a class="btn btn-primary" data-method="post" href="/breweries/4/toggle_activity" rel="nofollow">change activity</a>
+
+:ET:@created_atf1392711140.1569548:@expires_in0

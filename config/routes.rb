@@ -24,4 +24,8 @@ Ratebeer::Application.routes.draw do
 
   root 'breweries#index'
 
+  resources :breweries do
+    post 'toggle_activity', on: :member
+  end
+
 end
